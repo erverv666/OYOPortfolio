@@ -1,0 +1,328 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: url('headerbg.jpg') center/cover no-repeat, linear-gradient(135deg, #0033A0, #00BFFF);
+    background-attachment: fixed;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.title {
+    position: relative;
+    color: transparent;
+    z-index: 2;
+}
+
+
+.title h1 {
+    text-align: right;
+    margin:auto;
+    font-size: 5vw;
+    margin-top: 0;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: left; 
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    nav {
+        display: none;
+        text-align: center;
+    }
+    nav.active {
+        display: block;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+    }
+    nav.active li {
+        display: block;
+        margin: 1rem 0;
+    }
+}
+
+.logo {
+    overflow: hidden;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+nav{
+    margin-top: 2rem;
+}
+nav ul {
+    list-style: none;
+    padding: 10px;
+    text-align: right;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #0033A0; 
+    border-radius: 10px; 
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav a:hover {
+    background-color: #00BFFF;
+}
+
+
+main {
+    max-width: 100%;
+    margin: 0 20%;
+    padding: 20px;
+}
+
+
+.intro {
+    float: left;
+    width: 100%;
+    margin: 2rem 0;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color: #000;
+    display: block;
+    background: url('introbg.jpg') center/cover no-repeat; 
+    background-size: cover;
+}
+
+.intro img {
+    float: right;
+    margin-right: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.intro button {
+    margin-top: 2rem;
+    background-color: #0033A0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.intro button:hover {
+    background-color: #00BFFF;
+}
+
+.about {
+    width: 100%;
+    margin: 2rem 0;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color: #000;
+    background: url('introbg.jpg') center/cover no-repeat;
+    background-size: cover;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #000, #333);
+    color: #666;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+
+#portfolio {
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+    align-items: center;
+   margin-top: 2rem;
+}
+
+#portfolio img {
+    width: 200px;
+    height: 150px;
+    margin: 0 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+#portfolio img:hover {
+    transform: scale(1.3);
+}
+
+
+.image-size {
+    width: 100%;
+    height: 100%;
+}
+
+.comm {
+    width: 100%;
+    margin: 2rem auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color: #000;
+    display: block;
+    background: url('introbg.jpg') center/cover no-repeat; 
+    background-size: cover;
+    text-align: center;
+}
+
+.contact-heading {
+    font-size: 2rem;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-list {
+    list-style: none;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.social-heading {
+    font-size: 1.8rem;
+    color: white;
+    margin-top: 2rem;
+}
+
+.social-list {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.other-site-heading {
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 20px;
+}
+
+.other-site-list {
+    list-style: none;
+    font-size: large;
+}
+
+a {
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: white;
+}
+
+.btn-primary {
+    font-weight: bold;
+    background-color: #0033A0;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.btn-primary:hover {
+    background-color: #00BFFF;
+}
+
+.comm ul li a {
+    margin-bottom: 20px;
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+}
+
+.button, .nav a, .portfolio img, .btn-primary {
+    transition: transform 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover, .nav a:hover, .portfolio img:hover, .btn-primary:hover {
+    transform: scale(1.05);
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.pulse-button {
+    animation: pulse 3s infinite;
+    background-color: #0033A0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pulse-button:hover {
+    background-color: #00BFFF;
+}
+
+.pulse-button:active {
+    transform: scale(0.95);
+    background-color: #0033A0;
+    color: white;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
